@@ -1,7 +1,12 @@
 import React from 'react';
+import PasswordForgetForm from '../components/PasswordForgetForm';
 
-const PasswordForget = () => {
-  return <h1>Password forget page</h1>;
-};
+const PasswordForget = () => (
+  <div>
+    <div className="my-4">
+      <PasswordForgetForm />
+    </div>
+  </div>
+);
 
 export default PasswordForget;
