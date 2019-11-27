@@ -15,4 +15,4 @@ export const withFirebase = Component => props => (
   </FirebaseContext.Consumer>
 );
 
-export default Firebase;
+export default FirebaseContext;
