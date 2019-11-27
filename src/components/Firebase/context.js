@@ -9,7 +9,7 @@ const FirebaseContext = createContext(null);
 // HOCs are usually named like 'withFirebase' or 'withRouter' compared to hooks being written like 'useState' or 'useEffect'
 
 export const withFirebase = Component => props => (
-  // context api creates a provider and consumer. self explanatory. the provider provies the data we need, the consumer recieves it.
+  // context api creates a provider and consumer. self explanatory. the provider provides the data we need, the consumer recieves it.
   <FirebaseContext.Consumer>
     {firebase => <Component {...props} firebase={firebase} />}
   </FirebaseContext.Consumer>

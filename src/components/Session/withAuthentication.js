@@ -18,7 +18,7 @@ const withAuthentication = Component => {
       });
     }
 
-    // unsubcribe from listener on mount
+    // unsubscribe from listener on unmount
     componentWillUnmount() {
       this.listener();
     }
